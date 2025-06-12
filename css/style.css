@@ -441,6 +441,23 @@ body {
     border: 0;
 }
 
+/*------------MANTENIMIENTO--------------*/
+
+.mantenimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    text-align: center;
+}
+
+.mantenimiento h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+}
+
+/*------------MANTENIMIENTO--------------*/
+
 /*------------footer--------------*/
 
 @media (max-width: 600px) {
