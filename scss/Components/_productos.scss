@@ -1,0 +1,150 @@
+//!------------PLACAS DE VIDEO--------------!/
+
+.flexdeplacas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -350px;
+    font-family: "Inter", sans-serif;
+
+    h4 {
+        position: absolute;
+        font-size: 40px;
+        font-weight: 300;
+        left: 50px;
+        margin-bottom: 800px;
+        margin-top: -120px;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+}
+
+.placas-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.placas {
+    width: 300px;
+
+    img {
+        width: 300px;
+        height: 300px;
+        border-width: 10px;
+        border: 7px solid rgb(119, 119, 119);
+        font-size: 20px;
+        object-fit: contain;
+    }
+
+    .nombre {
+        font-weight: bold;
+        margin: 10px 0 5px;
+    }
+
+    .precio {
+        font-size: 20px;
+    }
+}
+
+//!------------PLACAS DE VIDEO--------------!/
+
+
+// ------------PROCESADORES----------------- /
+
+.flexdeprocesadores-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  font-family: "Inter", sans-serif;
+
+  h4 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 300;
+    left: 50px;
+    margin-bottom: 800px;
+    margin-top: -120px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+}
+
+.procesadores-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.procesadores {
+  width: 300px;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border: 7px solid rgb(119, 119, 119);
+    font-size: 20px;
+    object-fit: contain;
+  }
+
+  .nombre {
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+
+  .precio {
+    font-size: 20px;
+  }
+}
+
+//-------------PROCESADORES---------- /
+
+//? ------------MONITORES------------- */
+.flexdemonitores-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    font-family: "Inter", sans-serif;
+
+    h4 {
+        position: absolute;
+        font-size: 40px;
+        font-weight: 300;
+        left: 50px;
+        margin-bottom: 800px;
+        margin-top: -120px;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+}
+
+.monitores-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.monitores {
+    width: 300px;
+
+    img {
+        width: 300px;
+        height: 300px;
+        border: 7px solid rgb(119, 119, 119);
+        font-size: 20px;
+        object-fit: contain;
+    }
+
+    .nombre {
+        font-weight: bold;
+        margin: 10px 0 5px;
+    }
+
+    .precio {
+        font-size: 20px;
+    }
+}
+
+//? ------------MONITORES------------- */

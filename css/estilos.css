@@ -1,3 +1,382 @@
+body {
+  background-color: #f8f8f8;
+  margin: 0px;
+  padding: 0;
+}
 
+.barra-superior {
+  background-color: #6e6e6e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.barra-superior .buscador {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.barra-superior .buscador input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 400px;
+}
+.barra-superior .buscador button {
+  padding: 8px;
+  border: none;
+  background-color: #666;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.accesos-usuario {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+.accesos-usuario .usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.accesos-usuario .usuario img {
+  width: 25px;
+  height: auto;
+}
+.accesos-usuario .mi-cuenta {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+.accesos-usuario .mi-cuenta a {
+  text-decoration: none;
+  color: inherit;
+}
+.accesos-usuario .carrito-de-compras {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.accesos-usuario .carrito-de-compras a {
+  text-decoration: none;
+  color: inherit;
+}
+.accesos-usuario .carrito-de-compras img {
+  width: 25px;
+  height: auto;
+}
+.accesos-usuario .carrito-de-compras .mi-carrito {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.barra-superior {
+  background-color: #6e6e6e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.barra-superior .buscador {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.barra-superior .buscador input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 400px;
+}
+.barra-superior .buscador button {
+  padding: 8px;
+  border: none;
+  background-color: #666;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.accesos-usuario {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+.accesos-usuario .usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.accesos-usuario .usuario img {
+  width: 25px;
+  height: auto;
+}
+.accesos-usuario .mi-cuenta {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+.accesos-usuario .mi-cuenta a {
+  text-decoration: none;
+  color: inherit;
+}
+.accesos-usuario .carrito-de-compras {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.accesos-usuario .carrito-de-compras a {
+  text-decoration: none;
+  color: inherit;
+}
+.accesos-usuario .carrito-de-compras img {
+  width: 25px;
+  height: auto;
+}
+.accesos-usuario .carrito-de-compras .mi-carrito {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+.slider-grid-container {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+}
+.slider-grid-container .slider-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  animation: slideAnimation 30s infinite;
+}
+.slider-grid-container .slider-grid .slide {
+  display: grid;
+  flex-shrink: 0;
+}
+.slider-grid-container .slider-grid .slide img {
+  margin-top: 100px;
+  width: 100%;
+  aspect-ratio: 80/50;
+  height: 50%;
+  object-fit: fill;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  33.33% {
+    transform: translateX(0%);
+  }
+  33.34% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-100%);
+  }
+  66.67% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.flexdeplacas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -350px;
+  font-family: "Inter", sans-serif;
+}
+.flexdeplacas-container h4 {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 300;
+  left: 50px;
+  margin-bottom: 800px;
+  margin-top: -120px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.placas-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.placas {
+  width: 300px;
+}
+.placas img {
+  width: 300px;
+  height: 300px;
+  border-width: 10px;
+  border: 7px solid rgb(119, 119, 119);
+  font-size: 20px;
+  object-fit: contain;
+}
+.placas .nombre {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+.placas .precio {
+  font-size: 20px;
+}
+
+.flexdeprocesadores-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  font-family: "Inter", sans-serif;
+}
+.flexdeprocesadores-container h4 {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 300;
+  left: 50px;
+  margin-bottom: 800px;
+  margin-top: -120px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.procesadores-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.procesadores {
+  width: 300px;
+}
+.procesadores img {
+  width: 300px;
+  height: 300px;
+  border: 7px solid rgb(119, 119, 119);
+  font-size: 20px;
+  object-fit: contain;
+}
+.procesadores .nombre {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+.procesadores .precio {
+  font-size: 20px;
+}
+
+.flexdemonitores-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  font-family: "Inter", sans-serif;
+}
+.flexdemonitores-container h4 {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 300;
+  left: 50px;
+  margin-bottom: 800px;
+  margin-top: -120px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.monitores-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.monitores {
+  width: 300px;
+}
+.monitores img {
+  width: 300px;
+  height: 300px;
+  border: 7px solid rgb(119, 119, 119);
+  font-size: 20px;
+  object-fit: contain;
+}
+.monitores .nombre {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+.monitores .precio {
+  font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #d3d3d3;
+  padding: 20px 40px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.footer-contacto p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  margin: 0 0 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.footer .redessociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.footer .redessociales img {
+  width: 50px;
+  height: 50px;
+}
+.footer-mapa iframe {
+  width: 300px;
+  height: 300px;
+  border: 0;
+}
 
 /*# sourceMappingURL=estilos.css.map */

@@ -58,7 +58,7 @@
         }   
     }
 
-.mi-cuenta {
+    .mi-cuenta {
     font-family: "Inter", sans-serif;
     font-size: 15px;
 
@@ -83,9 +83,58 @@
         height: auto;
         }
 
-.mi-carrito {
+    .mi-carrito {
         font-family: "Inter", sans-serif;
         font-size: 15px;
         }
+    }
+}
+
+.slider-grid-container {
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+
+.slider-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    animation: slideAnimation 30s infinite;
+
+.slide {
+    display: grid;
+    flex-shrink: 0;
+
+        img {
+            margin-top: 100px;
+            width: 100%;
+            aspect-ratio: 80 / 50;
+            height: 50%;
+            object-fit: fill;                
+            }
+        }
+    }
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+    33.33% {
+        transform: translateX(0%);
+    }
+
+    33.34% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-100%);
+    }
+
+    66.67% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-200%);
     }
 }
