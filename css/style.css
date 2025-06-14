@@ -422,7 +422,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10px; /* Espacio entre los elementos */
+    gap: 10px;
     margin-top: 20px;
     font-family: "Inter", sans-serif;
     font-size: 20px;
@@ -431,7 +431,7 @@ body {
 }
 
 .redessociales img {
-    width: 50px; /* Ajustá el tamaño según prefieras */
+    width: 50px; 
     height: 50px;
 }
 
