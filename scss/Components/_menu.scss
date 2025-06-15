@@ -1,0 +1,96 @@
+.navbar {
+    background-color: #e0e0e0;
+    padding: 1rem;
+
+.logo-navbar {
+    height: 50px;
+    width: auto;
+}
+
+.barra-de-menu {
+    gap: 1.5rem;
+}
+
+.buscador {
+        input {
+        width: 450px;
+        padding: 6px 10px;
+        font-size: 16px;
+        }
+    }
+}
+
+.buscador-expandido {
+    width: 400px; // O el ancho que prefieras
+    max-width: 100%;
+}
+
+.usuario,
+.carrito-de-compras {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+        height: 24px;
+        width: 24px;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+
+        &:hover {
+        color: #007bff; // o el color que uses como primario
+        text-decoration: underline; // o animación si querés más detalle
+        }
+    }
+    }
+
+    .usuario {
+    padding: 20px;
+    }
+
+
+.navbar-menu {
+    background-color: #6e6e6e;
+    width: 100%;
+    padding: 1rem 0;
+
+    .nav-link {
+        color: #000;
+
+        &:hover {
+        color: #007bff;
+        }
+    }
+}
+
+.full-width-nav {
+    background-color: #f8f9fa;
+    width: 100vw;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Centrar el submenu debajo de "Productos" */
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    min-width: 180px;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
