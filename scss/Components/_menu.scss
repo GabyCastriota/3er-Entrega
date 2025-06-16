@@ -36,17 +36,20 @@
         width: 24px;
     }
 
-    a {
-        color: #000;
-        text-decoration: none;
-        transition: color 0.3s ease, text-decoration 0.3s ease;
+
 
         &:hover {
         color: #000000; // o el color que uses como primario
         text-decoration: none;
         }
     }
-    }
+
+.textos-header{
+    font-size: 15px;
+    text-decoration: none;
+    padding-top: 10px;
+    color: #000;
+}
 
     .usuario {
     padding: 20px;
@@ -59,11 +62,7 @@
     padding: 1rem 0;
 
     .nav-link {
-        color: #000;
-
-        &:hover {
-        color: #007bff;
-        }
+    color: #000;
     }
 }
 
