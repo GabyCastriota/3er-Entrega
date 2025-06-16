@@ -1,6 +1,7 @@
 .navbar {
-    background-color: #e0e0e0;
+    background-color: #8b8b8b;
     padding: 1rem;
+}
 
 .logo-navbar {
     height: 50px;
@@ -18,7 +19,6 @@
         font-size: 16px;
         }
     }
-}
 
 .buscador-expandido {
     width: 400px; // O el ancho que prefieras
@@ -42,8 +42,8 @@
         transition: color 0.3s ease, text-decoration 0.3s ease;
 
         &:hover {
-        color: #007bff; // o el color que uses como primario
-        text-decoration: underline; // o animación si querés más detalle
+        color: #000000; // o el color que uses como primario
+        text-decoration: none;
         }
     }
     }
@@ -54,7 +54,7 @@
 
 
 .navbar-menu {
-    background-color: #6e6e6e;
+    background-color: #bebebe;
     width: 100%;
     padding: 1rem 0;
 

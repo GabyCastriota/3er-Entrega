@@ -6,17 +6,20 @@ body {
 }
 
 .navbar {
-  background-color: #e0e0e0;
+  background-color: #8b8b8b;
   padding: 1rem;
 }
-.navbar .logo-navbar {
+
+.logo-navbar {
   height: 50px;
   width: auto;
 }
-.navbar .barra-de-menu {
+
+.barra-de-menu {
   gap: 1.5rem;
 }
-.navbar .buscador input {
+
+.buscador input {
   width: 450px;
   padding: 6px 10px;
   font-size: 16px;
@@ -48,8 +51,8 @@ body {
 }
 .usuario a:hover,
 .carrito-de-compras a:hover {
-  color: #007bff;
-  text-decoration: underline;
+  color: #000000;
+  text-decoration: none;
 }
 
 .usuario {
@@ -57,7 +60,7 @@ body {
 }
 
 .navbar-menu {
-  background-color: #6e6e6e;
+  background-color: #bebebe;
   width: 100%;
   padding: 1rem 0;
 }
@@ -95,6 +98,30 @@ body {
   border-radius: 0.25rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+}
+
+#carouselmexo .carousel-control-prev,
+.carousel-control-next {
+  background: none;
+  width: auto;
+  border: none;
+  padding: 1rem;
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-item img {
+  height: 500px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
 }
 
 .flexdeplacas-container {
