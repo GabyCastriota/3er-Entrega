@@ -36,52 +36,68 @@
 //!------------PLACAS DE VIDEO--------------!/
 
 .flexdeplacas-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    font-family: "Inter", sans-serif;
+  max-width: 1600px;
+  margin: 100px auto 0;
+  margin-bottom: 150px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    h4 {
-      position: absolute;
-      font-size: 40px;
-      font-weight: 300;
-      left: 50px;
-      margin-bottom: 50px;
-      margin-top: -120px;
-    }
+  h4 {
+    width: 100%;
+    text-align: left;
+    font-size: 34px;
+    font-weight: 350;
+    margin-bottom: 2rem;
+  }
 }
 
 .placas-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  width: 100%;
 }
 
 .placas {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(236, 233, 233, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    transform: scale(1.06);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 9px 11px 19px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 11px 19px -4px rgba(0,0,0,0.75);
+    border-color: #e0e0e0;
+}
+
+  img {
     width: 100%;
-    max-width: 300px;
+    height: auto;
+    object-fit: contain;
     margin-bottom: 1rem;
+  }
 
-    img {
-        width: 100%;
-        height: auto;
-        border-width: 10px;
-        border: 7px solid rgb(119, 119, 119);
-        font-size: 20px;
-        object-fit: contain;
-    }
+  .nombre {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+  }
 
-    .nombre {
-        font-weight:500;
-        margin: 10px 0 5px;
-    }
-
-    .precio {
-        font-size: 20px;
-        font-weight: bold;
-    }
+  .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
 }
 
 //!------------PLACAS DE VIDEO--------------!/
@@ -90,100 +106,134 @@
 // ------------PROCESADORES----------------- /
 
 .flexdeprocesadores-container {
+  max-width: 1600px;
+  margin: 50px auto 0;
+  margin-bottom: 150px;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
-  font-family: "Inter", sans-serif;
 
   h4 {
-    position: absolute;
-    left: 50px;
-    font-size: 40px;
-    font-weight: 300;
-    margin-bottom: 50px;
-    margin-top: -120px;
+    width: 100%;
+    text-align: left;
+    font-size: 34px;
+    font-weight: 350;
+    margin-bottom: 2rem;
   }
 }
 
 .procesadores-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
   width: 100%;
 }
 
 .procesadores {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(236, 233, 233, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-    img {
-      width: 100%;
-      height: auto;
-      border: 7px solid rgb(119, 119, 119);
-      font-size: 20px;
-      object-fit: contain;
+  &:hover {
+    transform: translateY(-5px);
+    transform: scale(1.06);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 9px 11px 19px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 11px 19px -4px rgba(0,0,0,0.75);
+    border-color: #e0e0e0;
+}
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
   }
 
   .nombre {
     font-weight: 500;
-    margin: 10px 0 5px;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
   }
 
   .precio {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    color: #000000;
   }
 }
 
 //-------------PROCESADORES---------- /
 
 //? ------------MONITORES------------- */
-.flexdemonitores-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    font-family: "Inter", sans-serif;
 
-    h4 {
-        position: absolute;
-        left: 50px;
-        font-size: 40px;
-        font-weight: 300;
-        margin-bottom: 50px;
-        margin-top: -120px;
-    }
+.flexdemonitores-container {
+  max-width: 1600px;
+  margin: 50px auto 0;
+  margin-bottom: 80px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4 {
+    width: 100%;
+    text-align: left;
+    font-size: 34px;
+    font-weight: 350;
+    margin-bottom: 2rem;
+  }
 }
 
 .monitores-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  width: 100%;
 }
 
 .monitores {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(236, 233, 233, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    transform: scale(1.06);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 9px 11px 19px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 11px 19px -4px rgba(0,0,0,0.75);
+    border-color: #e0e0e0;
+}
+
+  img {
     width: 100%;
-    max-width: 300px;
+    height: auto;
+    object-fit: contain;
     margin-bottom: 1rem;
+  }
 
-    img {
-        width: 100%;
-        height: auto;
-        border: 7px solid rgb(119, 119, 119);
-        font-size: 20px;
-        object-fit: contain;
-    }
+  .nombre {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+  }
 
-    .nombre {
-        font-weight: 500;
-        margin: 10px 0 5px;
-    }
-
-    .precio {
-        font-size: 20px;
-        font-weight: bold;
-    }
+  .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
 }
