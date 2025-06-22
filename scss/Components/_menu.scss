@@ -11,11 +11,12 @@
     }
 
     .logo-navbar {
-        height: 50px;
-        width: auto;
-        object-fit: contain;
-        max-width: 1000px;
-    }
+    width: 100%;
+    max-width: 160px; // límite razonable para desktop
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
 
 
     .buscador {
@@ -34,8 +35,26 @@
 
         button {
         background-color: #777777;
-        left: 2%;
         }
+    }
+
+    
+
+    .custom-search-button {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 45px;
+    border-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: -10px; // clave para eliminar el pequeño espacio entre ambos
+    }
+
+    .lupita {
+    width: 20px;
+    height: 20px;
+    left:20px;               
     }
 
     .carrito-de-compras,

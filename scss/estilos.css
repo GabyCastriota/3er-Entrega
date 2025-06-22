@@ -7,11 +7,44 @@ body {
 
 @media screen and (max-width: 576px) {
   .logo-navbar {
-    height: 50px;
-    width: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
-    max-width: 100px;
+    max-width: 80px !important;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .buscador input {
+    width: 100% !important;
+    min-width: 85px !important;
+    margin-left: 10px !important;
+  }
+  .custom-search-button {
+    width: 40px !important;
+  }
+  .lupita {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carrito-de-compras img,
+  .usuario img {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}
+@media screen and (max-width: 576px) and (max-width: 576px) {
+  .carrito-de-compras h1,
+  .usuario h1,
+  .textos-header {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-menu .nav-link {
+    font-size: 9px;
+  }
+  .navbar-menu .dropdown-item {
+    font-size: 7px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -34,7 +67,7 @@ body {
     position: static !important;
     left: auto !important;
     margin: 1rem 0 0.5rem;
-    font-size: 18px;
+    font-size: 25px !important;
     text-align: center;
   }
   .placas,
@@ -68,14 +101,6 @@ body {
     text-align: center;
   }
 }
-@media screen and (max-width: 576px) and (max-width: 768px) {
-  .navbar-menu .nav-link {
-    font-size: 9px;
-  }
-  .navbar-menu .dropdown-item {
-    font-size: 7px;
-  }
-}
 .navbar {
   background-color: #8b8b8b;
   padding: 1rem;
@@ -88,11 +113,12 @@ body {
   overflow: hidden;
 }
 .navbar .logo-navbar {
-  height: 50px;
-  width: auto;
+  width: 100%;
+  max-width: 160px;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
-  max-width: 1000px;
+  display: block;
 }
 .navbar .buscador {
   display: flex;
@@ -109,7 +135,21 @@ body {
 }
 .navbar .buscador button {
   background-color: #777777;
-  left: 2%;
+}
+.navbar .custom-search-button {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  width: 45px;
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-left: -10px;
+}
+.navbar .lupita {
+  width: 20px;
+  height: 20px;
+  left: 20px;
 }
 .navbar .carrito-de-compras,
 .navbar .usuario {
