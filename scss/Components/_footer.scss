@@ -1,54 +1,29 @@
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #d3d3d3;
-    padding: 20px 40px;
+.my-footer {
+  background-color: #585858; // Cambiá este valor por el color que prefieras
+  color: #f8f9fa; // Color del texto general
 
-    &-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    a {
+        color: #7a7a7a;
+        text-decoration: none;
+
+        &:hover {
+        color: #ffffff; // Color destacado en hover
+        }
     }
 
-    &-logo {
-        width: 200px;
-        height: 100px;
-        object-fit: contain;
-        margin-bottom: 10px;
-    }
-
-    &-contacto p {
-        font-family: "Inter", sans-serif;
-        font-size: 20px;
-        margin: 0 0 20px;
-        text-align: center;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-    }
-
-.redessociales {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    margin-top: 20px;
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-
-    img {
-        width: 50px;
-        height: 50px;
+    hr.border-secondary {
+        border-color: #000000; // Color de la línea divisoria
     }
 }
 
-    &-mapa iframe {
-    width: 300px;
-    height: 300px;
-    border: 0;
-    }
+.social-icon {
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    filter: invert(80%);
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }

@@ -1,95 +1,131 @@
 .navbar {
     background-color: #8b8b8b;
     padding: 1rem;
-}
 
-.logo-navbar {
-    height: 50px;
-    width: auto;
-}
+    .container-fluid {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap; // 🟩 EVITA QUE SE HAGAN COLUMNAS
+        gap: 10px;
+        overflow: hidden;
+    }
 
-.barra-de-menu {
-    gap: 1.5rem;
-}
+    .logo-navbar {
+        height: 50px;
+        width: auto;
+        object-fit: contain;
+        max-width: 1000px;
+    }
 
-.buscador {
+
+    .buscador {
+        display: flex;
+        align-items: center; // ✅ Centra el input verticalmente con el logo y el botón
+        margin: 0 auto;
+        gap: 5px;
+        flex-grow: 1;
+        
         input {
-        width: 450px;
+        width: 30%;
+        min-width: 0; // 🔑 Esto permite que se encoja si falta espacio
+        font-size: 14px;
         padding: 6px 10px;
-        font-size: 16px;
+        }
+
+        button {
+        padding: 6px 10px;
         }
     }
 
-.buscador-expandido {
-    width: 400px; // O el ancho que prefieras
-    max-width: 100%;
-}
-
-.usuario,
-.carrito-de-compras {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    img {
-        height: 24px;
-        width: 24px;
-    }
-
-
-
-        &:hover {
-        color: #000000; // o el color que uses como primario
-        text-decoration: none;
-        }
-    }
-
-.textos-header{
-    font-size: 15px;
-    text-decoration: none;
-    padding-top: 10px;
-    color: #000;
-}
-
+    .carrito-de-compras,
     .usuario {
-    padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-shrink: 0;
+        padding: 10px;
+
+        img {
+        height: 20px;
+        width: 20px;
+        }
+
+        h1 {
+        font-size: 12px;
+        color: #000;
+        text-decoration: none;
+        margin: 0;
+        white-space: nowrap;
+        }
     }
 
+    .textos-header {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
 
+// NAVBAR GENERAL //
 .navbar-menu {
     background-color: #bebebe;
     width: 100%;
     padding: 1rem 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 
     .nav-link {
-    color: #000;
+        color: #000;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    &:hover .nav-link {
+        opacity: 0.6;
+    }
+
+    .nav-link:hover {
+        opacity: 1 !important;
     }
 }
 
 .full-width-nav {
-    background-color: #f8f9fa;
+    background-color: #dd0000;
     width: 100vw;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-/* Centrar el submenu debajo de "Productos" */
+// SUBMENU //
 .nav-item.dropdown {
     position: relative;
+
+    &:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        min-width: 180px;
+        background-color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transition: background-color 0.3s ease;
+
+        .dropdown-item {
+        color: #000;
+        transition: background-color 0.3s ease, filter 0.3s ease;
+
+        &:hover {
+            background-color: #f0f0f0;
+            filter: brightness(0.9);
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        }
+    }
 }
 
-.nav-item.dropdown .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: max-content;
-    min-width: 180px;
-    background-color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}

@@ -11,6 +11,14 @@
   transition: transform 0.3s ease-in-out;
 }
 
+#carouselmexo .carousel-control-next {
+  right: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 15px !important;
+  width: 40px; // ajustá esto si querés un ancho más fino
+}
+
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
 
@@ -31,32 +39,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 200px;
     font-family: "Inter", sans-serif;
 
     h4 {
-        position: absolute;
-        font-size: 40px;
-        font-weight: 300px;
-        left: 50px;
-        margin-bottom: 800px;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
+      position: absolute;
+      font-size: 40px;
+      font-weight: 300;
+      left: 50px;
+      margin-bottom: 50px;
+      margin-top: -120px;
     }
 }
 
 .placas-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
 
 .placas {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
 
     img {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: auto;
         border-width: 10px;
         border: 7px solid rgb(119, 119, 119);
         font-size: 20px;
@@ -64,12 +74,13 @@
     }
 
     .nombre {
-        font-weight: bold;
+        font-weight:500;
         margin: 10px 0 5px;
     }
 
     .precio {
         font-size: 20px;
+        font-weight: bold;
     }
 }
 
@@ -87,40 +98,42 @@
 
   h4 {
     position: absolute;
+    left: 50px;
     font-size: 40px;
     font-weight: 300;
-    left: 50px;
-    margin-bottom: 800px;
+    margin-bottom: 50px;
     margin-top: -120px;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
   }
 }
 
 .procesadores-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
 }
 
 .procesadores {
-  width: 300px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
 
-  img {
-    width: 300px;
-    height: 300px;
-    border: 7px solid rgb(119, 119, 119);
-    font-size: 20px;
-    object-fit: contain;
+    img {
+      width: 100%;
+      height: auto;
+      border: 7px solid rgb(119, 119, 119);
+      font-size: 20px;
+      object-fit: contain;
   }
 
   .nombre {
-    font-weight: bold;
+    font-weight: 500;
     margin: 10px 0 5px;
   }
 
   .precio {
     font-size: 20px;
+    font-weight: bold;
   }
 }
 
@@ -136,41 +149,41 @@
 
     h4 {
         position: absolute;
+        left: 50px;
         font-size: 40px;
         font-weight: 300;
-        left: 50px;
-        margin-bottom: 800px;
+        margin-bottom: 50px;
         margin-top: -120px;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
     }
 }
 
 .monitores-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
 
 .monitores {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
 
     img {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: auto;
         border: 7px solid rgb(119, 119, 119);
         font-size: 20px;
         object-fit: contain;
     }
 
     .nombre {
-        font-weight: bold;
+        font-weight: 500;
         margin: 10px 0 5px;
     }
 
     .precio {
         font-size: 20px;
+        font-weight: bold;
     }
 }
-
-//? ------------MONITORES------------- */

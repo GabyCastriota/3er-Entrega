@@ -1,0 +1,77 @@
+@media screen and (max-width: 576px) {
+    .logo-navbar {
+        height: 50px;
+        width: auto;
+        object-fit: contain;
+        max-width: 100px;
+    }
+
+}
+@media screen and (max-width: 576px) {
+    .carousel-item img {
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+  // Estilos globales de fuente
+    .placas-container,
+    .procesadores-container,
+    .monitores-container,
+    .placas,
+    .procesadores,
+    .monitores {
+        font-family: "Inter", sans-serif;
+    }
+
+  // Títulos de sección
+    .flexdeplacas-container h4,
+    .flexdeprocesadores-container h4,
+    .flexdemonitores-container h4 { // ← Esto es lo que querés mantener
+        position: static !important;
+        left: auto !important;
+        margin: 1rem 0 0.5rem;
+        font-size: 18px;
+        text-align: center;
+        }
+
+
+  // Tarjetas (placas, procesadores, monitores)
+    .placas,
+    .procesadores,
+    .monitores {
+        width: 100%;
+        max-width: 120px !important;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+
+    img {
+        width: 100% !important;
+        height: auto !important;
+        border: 4px solid #777 !important;
+        }
+
+    .nombre {
+        font-size: 12px !important;
+        text-align: center;
+        }
+
+    .precio {
+        font-size: 14px !important;
+        text-align: center;
+        }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-menu .nav-link {
+    font-size: 9px;
+    }
+
+    .navbar-menu .dropdown-item {
+    font-size: 7px;
+    }
+}
+}
