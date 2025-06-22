@@ -41,7 +41,7 @@ body {
   .procesadores,
   .monitores {
     width: 100%;
-    max-width: 120px !important;
+    max-width: 150px !important;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,8 @@ body {
   padding: 6px 10px;
 }
 .navbar .buscador button {
-  padding: 6px 10px;
+  background-color: #777777;
+  left: 2%;
 }
 .navbar .carrito-de-compras,
 .navbar .usuario {
