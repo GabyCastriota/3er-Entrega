@@ -1,91 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <title>Gabinetes</title>
-</head>
-<body>
-    <header>
-    <div class="barra-superior">
-        <h1>
-        <a href="../index.html">
-        <img src="../img/22 may 2025, 09_5aa5_11.png" alt="mexo" class="logo">
-        </a>
-        </h1>
-    <div class="buscador">
-        <input type="text" placeholder="Buscar productos...">
-        <button class="lupa"><img src="../img/search.png" alt="lupa"></button>
-    </div>
-    <div class="accesos-usuario">
-    <div class="usuario">
-        <a href="../index.html">
-        <img src="../img/user.png" alt="cuenta" class="micuenta">
-    </a>
-    <h2 class="mi-cuenta">
-        <a href="../index.html">Mi Cuenta</a>
-    </h2>
-    </div>  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Coolers</title>
+    </head>
 
-    <div class="carrito-de-compras">
-    <a href="../index.html">
-        <img src="../img/shopping-cart.png" alt="carro" class="carrito">
-    </a>
-    <h3 class="mi-carrito">
-        <a href="../index.html">Mi Carrito</a>
-    </h3>
+    <body>
+    <header>
+    <nav class="navbar">
+    <div class="container-fluid d-flex align-items-center gap-2 px-2 py-2 flex-nowrap">
+
+        <!-- Logo -->
+        <a class="navbar-brand p-0 m-0 flex-shrink-0" href="../index.html">
+        <img src="../img/LOGO MEXO.png" alt="Logo Mexo" class="logo-navbar" />
+        </a>
+
+        <!-- Buscador -->
+        <form class="d-flex justify-content-center buscador w-100 mx-3" role="search">
+        <input class="form-control buscador-expandido" type="search" placeholder="Buscar productos..." />
+        <button class="btn custom-search-button rounded-end" type="submit">
+            <img class="lupita" src="../img/search.png" alt="Buscar">
+        </button>
+        </form>
+
+        <!-- Accesos -->
+        <div class="d-flex align-items-center flex-shrink-0">
+        <a href="../pages/micarrito.html" class="d-flex align-items-center carrito-de-compras ms-3">
+            <img src="../img/shopping-cart.png" alt="Carrito" style="width: 24px;">
+            <h1 class="textos-header">Mi Carrito</h1>
+        </a>
+        <a href="../pages/micuenta.html" class="d-flex align-items-center usuario ms-3">
+            <img src="../img/user.png" alt="Usuario" style="width: 24px;">
+            <h1 class="textos-header">Mi Cuenta</h1>
+        </a>
+        </div>
+
     </div>
+    </nav>
+
+        <!-- Fila inferior (menú) -->
     <nav>
-        <ul class="menu">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../pages/productos.html">Productos</a>
-            <ul class="subMenu">
-            <li class="liMenu"><a href="procesadores.html">Procesadores</a></li>
-            <li class="liMenu"><a href="placasdevideo.html">Placas de Video</a></li>
-            <li class="liMenu"><a href="motherboards.html">Motherboards</a></li>
-            <li class="liMenu"><a href="memoriasram.html">Memorias Ram</a></li>
-            <li class="liMenu"><a href="fuentesdepoder.html">Fuentes de Poder</a></li>
-            <li class="liMenu"><a href="discosssd.html">Discos SSD</a></li>
-            <li class="liMenu"><a href="gabinetes.html">Gabinetes</a></li>
-            <li class="liMenu"><a href="coolers.html">Coolers</a></li>
+    <div class="navbar-menu">
+    <div class="container-fluid px-0">
+        <ul class="navbar-nav d-flex flex-row w-100 text-center m-0">
+        <li class="nav-item flex-fill">
+            <a class="nav-link active" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item flex-fill dropdown">
+            <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown">
+            Productos
+            </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/procesadores.html">Procesadores</a></li>
+            <li><a class="dropdown-item" href="../pages/placasdevideo.html">Placas de video</a></li>
+            <li><a class="dropdown-item" href="../pages/motherboards.html">Motherboards</a></li>
+            <li><a class="dropdown-item" href="../pages/discosssd.html">Discos SSD</a></li>
+            <li><a class="dropdown-item" href="../pages/memoriasram.html">Memorias RAM</a></li>
+            <li><a class="dropdown-item" href="../pages/fuentesdepoder.html">Fuentes de Poder</a></li>
+            <li><a class="dropdown-item" href="../pages/gabinetes.html">Gabinetes</a></li>
+            <li><a class="dropdown-item" href="../pages/coolers.html">Coolers</a></li>
             </ul>
-        <li><a href="procesadores.html">Procesadores</a>
-        <li><a href="placasdevideo.html">Placas de Video</a>
-        <li><a href="armatupc.html">Arma tu Pc</a>
+        </li>
+        <li class="nav-item flex-fill">
+            <a class="nav-link" href="../pages/placasdevideo.html">Placas de Video</a>
+        </li>
+        <li class="nav-item flex-fill">
+            <a class="nav-link" href="../pages/procesadores.html">Procesadores</a>
+        </li>
+        <li class="nav-item flex-fill">
+            <a class="nav-link" href="../pages/armatupc.html">Arma tu PC</a>
         </li>
         </ul>
+    </div>
+    </div>
     </nav>
     </header>
-<section>
-    <div class="mantenimiento">
-    <h4>PAGINA EN MANTENIMIENTO, DISCULPE LAS MOLESTIAS</h4>
-    </div>
-</section>
+    <main>
+        <div style="height: 500px;"></div>
+</main>
 </body>
-<footer class="footer">
-<div class="footer-info">
-    <img src="../img/22 may 2025, 09_5aa5_11.png" alt="Logo Mexo" class="footer-logo">
-    <div class="footer-contacto">
-    <p>#54 9 1145758598</p>
-    <p>mexo@gmail.com</p>
-    <p>¿Quienes Somos?</p>
-    <p>Trabaja con Nosotros</p>
-</div>
-</div>
-<div class="redessociales">
-    <p>REDES SOCIALES</p>
-    <img src="../img/instagram.png" alt="instagram">
-    <img src="../img/facebook.png" alt="facebook">
-    <img src="../img/whatsappicon.png" alt="whatsapp">
-</div>
+<footer class="my-footer text-white text-center text-lg-start mt-5">
+    <div class="container pt-4">
+        <div class="row text-start">
+        <!-- Columna 1 -->
+        <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">INFORMACIÓN ÚTIL</h6>
+            <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Formas de Pago</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Botón Arrepentimiento</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Defensa al Consumidor</a></li>
+            </ul>
+        </div>
 
-<div class="footer-mapa">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0182801979226!2d-58.38417712350351!3d-34.60369925749864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1748316781622!5m2!1ses-419!2sar"></iframe>
-</div>
+        <!-- Columna 2 -->
+        <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">ACERCA DE MEXO</h6>
+            <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Quiénes Somos</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Ubicación</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Trabajar en Mexo</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">MEXO</h6>
+            <ul class="list-unstyled">
+            <li><i class="bi bi-telephone me-2"></i>0810-678-9999</li>
+            <li class="mt-2">Sánchez de Bustamante 2554, Palermo, C.A.B.A.</li>
+            <li>Lunes a Viernes de 9:00 a 18:00hs. Sábados de 9:00 a 13:00hs.</li>
+            </ul>
+        </div>
+
+        <!-- Columna 4 -->
+        <div class="col-md-3 mb-4 text-center">
+            <h6 class="fw-bold">REDES</h6>
+            <p>Seguinos en nuestras redes sociales</p>
+            <div class="d-flex justify-content-center">
+            <a href="#" target="_blank">
+            <img src="../img/instagram.png" alt="instagram" class="img-fluid social-icon">
+            </a>
+            <a href="#" target="_blank">
+            <img src="../img/facebook.png" alt="facebook" class="img-fluid social-icon">
+            </a>
+            <a href="#" target="_blank">
+            <img src="../img/whatsappicon.png" alt="whatsapp" class="img-fluid social-icon">
+            </a>
+            </div>
+        </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center pb-3">
+        Copyright © 2012- 2025 Mexo
+        </div>
+    </div>
 </footer>
 </html>

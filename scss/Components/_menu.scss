@@ -1,104 +1,16 @@
-.navbar {
-    background-color: #8b8b8b;
-    padding: 1rem;
-
-    .container-fluid {
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap; // 
-        gap: 10px;
-        overflow: hidden;
-    }
-
-    .logo-navbar {
-    width: 100%;
-    max-width: 160px; // límite razonable para desktop
-    height: auto;
-    object-fit: contain;
-    display: block;
-}
-
-
-    .buscador {
-        display: flex;
-        align-items: center; // ✅ Centra el input verticalmente con el logo y el botón
-        margin: 0 auto;
-        gap: 5px;
-        flex-grow: 1;
-        
-        input {
-        width: 30%;
-        min-width: 0; // 🔑 Esto permite que se encoja si falta espacio
-        font-size: 14px;
-        padding: 6px 10px;
-        }
-
-        button {
-        background-color: #777777;
-        }
-    }
-
-    
-
-    .custom-search-button {
-    display: flex;
-    align-items: center;
-    height: 35px;
-    width: 45px;
-    border-radius: 0;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin-left: -10px; // clave para eliminar el pequeño espacio entre ambos
-    }
-
-    .lupita {
-    width: 20px;
-    height: 20px;
-    left:20px;               
-    }
-
-    a.carrito-de-compras,
-    .usuario {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        flex-shrink: 0;
-        padding: 10px;
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-
-        img {
-        height: 20px;
-        width: 20px;
-        }
-
-        h1 {
-        font-size: 12px;
-        color: #000;
-        text-decoration: none;
-        margin: 0;
-        white-space: nowrap;
-        }
-    }
-
-    .textos-header {
-        font-size: 13px;
-        white-space: nowrap;
-    }
-}
-
 // NAVBAR GENERAL //
 .navbar-menu {
     background-color: #bebebe;
     width: 100%;
     padding: 1rem 0;
-    font-family: "Inter", sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-weight: 600;
 
     .nav-link {
         color: #000;
         opacity: 1;
         transition: opacity 0.3s ease;
+        color: #1f1f1f;
     }
 
     &:hover .nav-link {
@@ -107,6 +19,7 @@
 
     .nav-link:hover {
         opacity: 1 !important;
+        color: #000;
     }
 }
 
@@ -125,6 +38,7 @@
 
     .dropdown-menu {
         position: absolute;
+        font-family: 'Archivo', sans-serif;
         top: 100%;
         left: 50%;
         transform: translateX(-50%);

@@ -1,6 +1,14 @@
-body {
+.body{
     background-color: #f8f8f8;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+}
+
+.login-page {
+    background-image:  linear-gradient(rgba(255, 255, 255, 0.322), rgba(255, 255, 255, 0.219)),url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; // opcional: fondo fijo {
 }
