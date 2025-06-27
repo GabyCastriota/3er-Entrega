@@ -86,7 +86,7 @@
     }
 }
 
---micarrito--
+//-------micarrito------//
 
 .card {
   border-radius: 10px;
@@ -95,25 +95,52 @@
 .card-title {
   font-size: 1.1rem;
 }
---procesadores---
+
+//-------micarrito------//
+
+
+//------MANTENIMIENTO-----//
+
+.mantenimiento {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 200px;
+  margin-bottom: 250px;
+}
+
+//------TARJETA DE PRODUCTOS-------//
+
 .product-card {
   margin-bottom: 5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
-  &:hover {
+    &:hover {
     transform: translateY(-5px) scale(1.06);
-    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 9px 11px 19px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 9px 11px 19px -4px rgba(0,0,0,0.75);
-    border-color: #e0e0e0;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+
   }
 }
+.borde-secundario {
+  border: 2px solid #ccc !important;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
 
-.card {
-  border: 10px solid #ccc;
-  margin-bottom: 1.5rem;
+.precios {
+  font-size: 20px;
+  font-weight: 600;
+  color: #d60d0d !important;
+}
+
+.llega-mañana {
+  background-color: #25d125;
+  color: #161616;
+  border: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  display: inline-block;
 }
 
 input[type="checkbox"] {
@@ -123,7 +150,7 @@ input[type="checkbox"] {
   width: 16px;
   height: 16px;
   border: 2px solid #666;
-  border-radius: 50%; // círculo
+  border-radius: 50%; // círculo //
   background-color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -133,13 +160,11 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
   background-color: #000;
-  box-shadow: inset 0 0 0 4px #fff; // opcional: efecto de círculo interior
+  box-shadow: inset 0 0 0 4px #fff;
 }
 
 #filterSection {
   display: none;
-
-  @media (min-width: 3000px) {
-    display: block !important; // visible siempre en desktop
-  }
 }
+
+//------TARJETA DE PRODUCTOS-------//

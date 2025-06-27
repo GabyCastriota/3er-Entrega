@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <title>Coolers</title>
+    <title>Placas de Video</title>
     </head>
 
     <body>
@@ -55,7 +55,7 @@
             <a class="nav-link active" href="../index.html">Inicio</a>
         </li>
         <li class="nav-item flex-fill dropdown">
-            <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
             Productos
             </a>
             <ul class="dropdown-menu">
@@ -66,6 +66,7 @@
             <li><a class="dropdown-item" href="../pages/memoriasram.html">Memorias RAM</a></li>
             <li><a class="dropdown-item" href="../pages/fuentesdepoder.html">Fuentes de Poder</a></li>
             <li><a class="dropdown-item" href="../pages/gabinetes.html">Gabinetes</a></li>
+            <li><a class="dropdown-item" href="../pages/monitores.html">Monitores</a></li>
             <li><a class="dropdown-item" href="../pages/coolers.html">Coolers</a></li>
             </ul>
         </li>
@@ -84,7 +85,185 @@
     </nav>
     </header>
     <main>
-        <div style="height: 500px;"></div>
+        <section class="container my-4">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Placas de Video</li>
+        </ol>
+    </nav>
+
+<!-- ORDENAR POR -->
+    <div class="mb-3">
+    <label class="form-label fw-semibold">Ordenar por:</label>
+    <div class="dropdown">
+        <button class="btn btn-outline-dark dropdown-toggle w-10" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Menor precio
+        </button>
+        <ul class="dropdown-menu w-10">
+        <li><a class="dropdown-item" href="#">Más relevantes</a></li>
+        <li><a class="dropdown-item active" href="#">Menor precio</a></li>
+        <li><a class="dropdown-item" href="#">Mayor precio</a></li>
+        <li><a class="dropdown-item" href="#">Mayor descuento</a></li>
+        </ul>
+    </div>
+    </div>
+
+        <div class="row">
+    <!-- Botón visible solo en móviles -->
+    <button class="btn btn-dark d-lg-none mb-3 ml-3" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse">
+    <i class="bi bi-sliders"></i> Filtrar
+    </button>
+
+    <!-- Filtros con colapsado -->
+    <aside class="col-lg-3 mb-4">
+    <div class="collapse d-lg-block" id="filterCollapse">
+        <div class="card p-3 border-secondary">
+        <h6 class="mb-3">Filtrar por socket</h6>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="corei3"><label class="form-check-label" for="corei3">Athlon</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="ryzen3"><label class="form-check-label" for="ryzen3">Ryzen 3</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="ryzen5"><label class="form-check-label" for="ryzen5">Ryzen 5</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="ryzen7"><label class="form-check-label" for="corei3">Ryzen 7</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="ryzen9"><label class="form-check-label" for="corei3">Ryzen 9</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="intelceleron"><label class="form-check-label" for="corei3">Intel Celeron</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="corei3"><label class="form-check-label" for="corei3">Core i3</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="corei5"><label class="form-check-label" for="corei3">Core i5</label></div>
+        <hr>
+        <h6 class="mb-3">Marca</h6>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="amd"><label class="form-check-label" for="amd">AMD</label></div>
+        <div class="form-check"><input class="form-check-input" type="checkbox" id="intel"><label class="form-check-label" for="intel">NVIDIA</label></div>
+        </div>
+    </div>
+</aside>
+
+        <!-- Productos -->
+        <div class="col-lg-9">
+        <h2 class="mb-4">Placas de Video</h2>
+        <div class="row row-cols-2 row-cols-md-2 row-cols-xl-3 g-4">
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/Micro Intel Celeron G5905 3.5Ghz 4Mb S.1200.webp" class="card-img-top mb-2" alt="Intel Celeron G5905">
+                <h6 class="fw-semibold mb-1">Micro Intel Celeron G5905 3.5Ghz 4Mb S.1200</h6>
+                <p class="text-muted small">Socket 1200</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$70.100 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/Micro AMD Athlon 3000G 3.5 Ghz AM4.webp" class="card-img-top mb-2" alt="Athlon 3000G">
+                <h6 class="fw-semibold mb-1">Micro AMD Athlon 3000G 3.5 Ghz AM4</h6>
+                <p class="text-muted small">Socket AM4</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$59.900 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/Procesador Amd Ryzen 3 3200G 3.8 Ghz + Vega8 - AM4.jpeg" class="card-img-top mb-2" alt="ryzen 3200G">
+                <h6 class="fw-semibold mb-1">Procesador Amd Ryzen 3 3200G 3.8 Ghz + Vega8</h6>
+                <p class="text-muted small">Socket AM4</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$77.729 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/Micro AMD Ryzen 5 4500 4.1 Ghz AM4.jpg" class="card-img-top mb-2" alt="Ryzen 5 4500">
+                <h6 class="fw-semibold mb-1">Micro AMD Ryzen 5 4500 4.1 Ghz AM4</h6>
+                <p class="text-muted small">Socket AM4</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$89.499 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/Micro Intel I3-10105F 4.4Ghz 6Mb S.1200.webp" class="card-img-top mb-2" alt="Intel I3-10105F">
+                <h6 class="fw-semibold mb-1">Micro Intel I3-10105F 4.4Ghz 6Mb S.1200</h6>
+                <p class="text-muted small">Socket 1200</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$96.499 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+        
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/Procesador-Amd-Ryzen-5-5600GT-4-Ghz-AM4_46852_1.jpeg" class="card-img-top mb-2" alt="Amd Ryzen 5 5600GT">
+                <h6 class="fw-semibold mb-1">Procesador Amd Ryzen 5 5600GT 4Ghz AM4</h6>
+                <p class="text-muted small">Socket AM4</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$190.999 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/procesador-cpu-intel-core-i7_42231_1.jpeg" class="card-img-top mb-2" alt="Intel Core i7 12700">
+                <h6 class="fw-semibold mb-1">Procesador Intel Core i7 12700 4.4 Ghz Alder Lake 1700</h6>
+                <p class="text-muted small">Socket Alder Lake 1700</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$410.999 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/Procesador-Amd-Ryzen-9-7900-5-Ghz-AM5_45552_1.jpeg" class="card-img-top mb-2" alt="Amd Ryzen 9 7900">
+                <h6 class="fw-semibold mb-1">Procesador Amd Ryzen 9 7900 5.4 Ghz - AM5</h6>
+                <p class="text-muted small">Socket AM5</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$545.999 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+
+            <!-- Producto -->
+            <div class="col product-card mb-4">
+            <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 p-3 borde-secundario">
+                <img src="../img/Procesadores/Procesador-Intel-Core-i9-14900F-Ghz-Raptor-Lake-1700_48600_1.jpeg" class="card-img-top mb-2" alt="Intel Core i9 14900F">
+                <h6 class="fw-semibold mb-1">Procesador Intel Core i9 14900F 2.0 Ghz Raptor Lake 1700</h6>
+                <p class="text-muted small">Socket Raptor Lake 1700</p>
+                <span class="badge llega-mañana mb-2">Llega mañana</span>
+                <p class="precios fw-bold mb-0">$825.959 <span class="text-muted small">Precio Especial</span></p>
+            </a>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+</section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </main>
 </body>
 <footer class="my-footer text-white text-center text-lg-start mt-5">
