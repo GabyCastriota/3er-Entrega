@@ -455,6 +455,78 @@ input[type=checkbox]:checked {
   display: none;
 }
 
+.seccion-contenida {
+  max-width: 1000px;
+}
+
+.col-lg-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.logos img {
+  width: 50px;
+  height: 20px;
+}
+
+.componente-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  max-height: 100%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.iconito-perifericos {
+  width: 60px;
+  filter: invert(15%) sepia(10%) saturate(0%) brightness(0%) contrast(100%) !important;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.iconito-perifericos:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.iconito {
+  width: 60px;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.iconito:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.producto-compacto {
+  padding: 0 0.5rem;
+}
+
+.tarjeta-compacta {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s;
+}
+
+.tarjeta-compacta:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.img-compacta {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto 0.5rem;
+  display: block;
+}
+
 #carouselmexo .carousel-control-prev,
 .carousel-control-next {
   background: none;
