@@ -474,7 +474,7 @@ input[type=checkbox]:checked {
 
 .componente-box {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid #ccc;
   border-radius: 0.5rem;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
   max-height: 100%;
@@ -504,20 +504,25 @@ input[type=checkbox]:checked {
   opacity: 1;
 }
 
+.precio-compacto {
+  font-weight: 700 !important;
+}
+
 .producto-compacto {
   padding: 0 0.5rem;
 }
 
 .tarjeta-compacta {
-  border: 1px solid #ddd;
+  border: 2px solid #ccc;
   border-radius: 0.5rem;
   background: #fff;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.3s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
-
 .tarjeta-compacta:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px) scale(1.06);
 }
 
 .img-compacta {
@@ -555,7 +560,7 @@ input[type=checkbox]:checked {
 }
 
 .carousel-item img {
-  height: 500px;
+  height: 450px;
   -o-object-fit: fill;
      object-fit: fill;
   width: 100%;
