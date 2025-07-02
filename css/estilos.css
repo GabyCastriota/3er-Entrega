@@ -467,6 +467,9 @@ input[type=checkbox]:checked {
 .logos img {
   width: 50px;
   height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
 }
 
 .componente-box {
